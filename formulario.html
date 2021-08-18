@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Formulário básico</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+
+    <input type="email" />
+    <br>
+    <br>
+    <input type="password" id="senha" />
+    <br>
+    <button>Login</button>
+    <script>
+
+        function verificarLogin() {
+
+            var input = document.querySelector("input");
+            input.focus();
+            var email = "mariana";
+
+            if (input.value == email) {
+                alert("Bem vindo");
+
+            } else {
+                alert("Erro Login. Tente novamente");
+            }
+
+            input.value = "";
+        }
+
+
+        var button = document.querySelector("button");
+        button.onclick = verificarLogin;
+
+    </script>
+</body>
+
+</html>
